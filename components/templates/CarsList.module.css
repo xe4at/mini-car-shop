@@ -1,0 +1,69 @@
+/* Layout.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.back {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  width: fit-content;
+  background-color: #1d71b28b;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 50px 0;
+  cursor: pointer;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back:hover {
+  background-color: #0288d1;
+  transform: scale(1.05);
+}
+
+.back p {
+  margin-left: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: calc(33.333% - 20px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 36px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

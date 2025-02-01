@@ -1,0 +1,102 @@
+/* Layout.module.css */
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.header {
+  margin: 40px 0 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+.details {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
+  padding: 20px;
+  margin: 15px 0;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+}
+
+.details div {
+  display: flex;
+  align-items: baseline;
+  margin: 15px 0;
+}
+
+.details span {
+  color: gray;
+  margin-left: auto;
+  font-size: 1rem;
+}
+
+.details p {
+  margin-left: 10px;
+  color: #666;
+}
+
+.descriptionTitle {
+  margin: 15px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0fac5d;
+}
+
+.descriptionText {
+  color: gray;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.details .price {
+  display: flex;
+  align-items: center;
+  color: #0fac5d;
+  font-size: 1.5rem;
+}
+
+.price p,
+.price span {
+  font-size: 1.5rem;
+}
+
+.button {
+  background-color: #0fac5d;
+  border: none;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 50px 0;
+  cursor: pointer;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0288d1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 15px;
+  }
+}
