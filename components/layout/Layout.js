@@ -10,7 +10,9 @@ function Layout({ children }) {
           <p>Choose and Buy your car</p>
         </Link>
       </header>
+
       <div className={styles.container}>{children}</div>
+
       <footer className={styles.footer}>
         <a href="/" target="_blank">
           ehsanatashkar.js

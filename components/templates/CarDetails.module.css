@@ -1,102 +1,133 @@
-/* Layout.module.css */
-
+/* استایل‌های کانتینر */
 .container {
-  max-width: 900px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px; /* حداکثر عرض کانتینر */
 }
 
+/* استایل‌های تصویر */
 .image {
   width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  height: auto;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 15px;
 }
 
+/* استایل‌های هدر */
 .header {
-  margin: 40px 0 20px;
-  font-size: 2rem;
+  margin: 10px 0;
+  font-size: 24px;
   font-weight: bold;
+  color: #000;
   text-align: center;
-  color: #333;
-  font-family: "Arial", sans-serif;
 }
 
+/* استایل‌های جزئیات */
 .details {
-  width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
-  padding: 20px;
-  margin: 15px 0;
-  background-color: #e0f7fa;
-  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
 .details div {
-  display: flex;
-  align-items: baseline;
-  margin: 15px 0;
-}
-
-.details span {
-  color: gray;
-  margin-left: auto;
-  font-size: 1rem;
+  flex: 1 1 45%; /* عرض هر جزئیات */
+  min-width: 200px; /* حداقل عرض برای هر جزئیات */
+  margin: 10px 0;
+  text-align: left;
+  padding: 10px;
 }
 
 .details p {
-  margin-left: 10px;
+  margin: 5px 0;
+  font-size: 14px;
   color: #666;
 }
 
+.details span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* استایل‌های توضیحات */
 .descriptionTitle {
-  margin: 15px 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #0fac5d;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .descriptionText {
-  color: gray;
-  text-align: justify;
-  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+  text-align: left;
 }
 
-.details .price {
+/* استایل‌های قیمت */
+.price {
   display: flex;
+  justify-content: center;
   align-items: center;
-  color: #0fac5d;
-  font-size: 1.5rem;
-}
-
-.price p,
-.price span {
-  font-size: 1.5rem;
-}
-
-.button {
-  background-color: #0fac5d;
-  border: none;
-  font-size: 1.5rem;
-  padding: 15px;
-  border-radius: 10px;
-  margin: 50px 0;
-  cursor: pointer;
-  color: white;
-  font-family: "Arial", sans-serif;
+  font-size: 18px;
   font-weight: bold;
+  color: #000;
+  margin: 20px 0;
+}
+
+.price p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* استایل‌های دکمه */
+.button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin: 20px auto;
 }
 
 .button:hover {
-  background-color: #0288d1;
-  transform: scale(1.05);
+  background-color: #555;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
+  .details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .details div {
+    min-width: 45%; /* عرض جزئیات در دستگاه‌های کوچک‌تر */
+  }
+
   .container {
-    margin: 0 15px;
+    max-width: 100%; /* عرض کامل کانتینر در دستگاه‌های کوچک‌تر */
+  }
+}
+
+@media (max-width: 480px) {
+  .details div {
+    min-width: 100%; /* عرض کامل جزئیات در دستگاه‌های کوچک‌تر */
   }
 }

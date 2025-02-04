@@ -1,48 +1,58 @@
-/* Layout.module.css */
-
+/* استایل‌های کانتینر */
 .container {
-  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px; */
-  width: fit-content;
-  margin: 50px auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   padding: 20px;
+}
+
+/* استایل‌های هر دسته‌بندی */
+.container div {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.container:hover {
-  transform: translateY(-5px);
-}
-
-.container div {
-  text-align: center;
-  margin: 10px;
-  background-color: #0288d1;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: bold;
-  width: 120px;
-  color: #ffffff;
-  font-family: "Arial", sans-serif;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
 .container div:hover {
-  background-color: #82b5d1;
-  transform: scale(1.1);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 600px) {
+/* استایل‌های لینک‌ها */
+.container a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* استایل‌های متن دسته‌بندی */
+.container p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* استایل‌های آیکون */
+.container svg {
+  width: 50px;
+  height: 50px;
+}
+
+/* استایل‌های رسپانسیو */
+@media (max-width: 768px) {
   .container {
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center; /* عناصر را در مرکز قرار می‌دهد */
   }
 
   .container div {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    width: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
   }
 }

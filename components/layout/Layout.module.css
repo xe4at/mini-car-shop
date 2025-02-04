@@ -1,80 +1,49 @@
-/* Layout.module.css */
-
+/* استایل‌های هدر */
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 0;
-    background: linear-gradient(135deg,  #688ed4, #bac8e0);
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 8px 8px;
-  }
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
+}
 
-  
-  .header p {
-    padding-top: 0.5px;
-    text-align: center;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #fff;
-  }
-  
-  .header h2 {
-    font-size: 2.5rem;
-    color: rgb(0, 0, 0);
-    margin: 0;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.478);
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
-    font-weight: 700;
-  }
-  
-  .header .divider {
-    width: 80%;
-    height: 2px;
-    background-color: white;
-    margin: 10px 0;
-  }
-  
-  .footer {
-    background-color: #333;
-    text-align: center;
-    color: white;
-    padding: 15px 0;
-    margin-top: 30px;
-    border-top: 2px solid #333;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .footer a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #ecf0f160;
-    font-family: 'Arial', sans-serif;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .footer a:hover {
-    color: #fff;
-    transform: scale(1.1);
-  }
-  
-  .container {
-    min-height: 800px;
-    padding: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  @media (max-width: 600px) {
-    .header h2 {
-      font-size: 1.5rem;
-    }
-  
-    .container {
-      padding: 20px;
-    }
-  }
-  
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* لینک‌های هدر */
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* استایل‌های کانتینر */
+.container {
+  padding: 20px;
+}
+
+/* استایل‌های فوتر */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

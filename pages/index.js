@@ -5,7 +5,7 @@ import CarsPage from "../components/templates/CarsPage";
 import carsData from "../data/carsData";
 
 function Index() {
-  const cars = carsData.slice(0, 3);
+  const cars = carsData.slice(0, 4);
 
   return (
     <div>
